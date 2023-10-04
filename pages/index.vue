@@ -1,7 +1,15 @@
 <template>
   <NuxtLayout>
-    <Nav />
+    <Header />
     <SectionMain />
+    <div class="flex">
+      <Sidebar />
+      <div class="flex flex-col gap-[3rem]">
+        <SectionSecondary :image-right="false" />
+        <SectionSecondary :image-right="true" />
+        <SectionSecondary :image-right="false" />
+      </div>
+    </div>
   </NuxtLayout>
 </template>
 

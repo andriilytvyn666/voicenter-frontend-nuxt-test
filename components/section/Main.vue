@@ -10,11 +10,7 @@
         </p>
         <span v-html="data?.testTaskHeaderText"></span>
       </div>
-      <button
-        class="py-2 px-8 bg-[#FF0000] text-white whitespace-nowrap font-normal w-fit"
-      >
-        Read More
-      </button>
+      <ButtonReadMore />
     </div>
     <NuxtImg
       :src="data?.testTaskHeaderImage"
