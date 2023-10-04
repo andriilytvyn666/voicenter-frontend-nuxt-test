@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col gap-[2rem] items-center">
-    <h1 class="font-bold text-[20px] py-[1.5rem]">section Title</h1>
+  <div class="flex flex-col gap-[2rem] items-center" :id="$props.id">
+    <h2 class="font-bold text-[20px] py-[1.5rem]">section Title</h2>
     <div
       :class="`items-center grid grid-cols-2 gap-[4.5rem] ml-8 ${
         !imageRight ? 'mr-32' : ''
@@ -8,11 +8,11 @@
     >
       <div class="bg-gray-500 w-full h-[24rem]" v-if="!imageRight"></div>
       <div class="flex flex-col gap-[1rem]">
-        <h2 class="font-bold">ITEM 1</h2>
-        <p class="font-medium">
+        <h3 class="font-bold">ITEM 1</h3>
+        <h3 class="font-medium">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the i
-        </p>
+        </h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -31,6 +31,7 @@
 
 <script lang="ts" setup>
 defineProps<{
+  id: string
   imageRight: boolean
 }>()
 </script>

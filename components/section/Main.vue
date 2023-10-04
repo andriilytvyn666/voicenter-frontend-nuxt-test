@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-12 px-12 pt-11 pb-20 bg-[#EEEEEE]">
+  <div class="flex gap-32 items-center px-16 pt-11 pb-20 bg-[#EEEEEE]">
     <div class="flex flex-col gap-[3.125rem]">
       <div class="flex flex-col gap-[0.875rem]">
         <h1 class="font-medium text-[25px] line-clamp-1">
@@ -15,7 +15,7 @@
     <NuxtImg
       :src="data?.testTaskHeaderImage"
       :alt="data?.testTaskHeaderImageAltText"
-      class="w-full grow h-[20rem]"
+      class="w-fit grow h-[20rem]"
     />
   </div>
 </template>

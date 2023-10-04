@@ -4,10 +4,10 @@
     <SectionMain />
     <div class="flex">
       <Sidebar />
-      <div class="flex flex-col gap-[3rem]">
-        <SectionSecondary :image-right="false" />
-        <SectionSecondary :image-right="true" />
-        <SectionSecondary :image-right="false" />
+      <div class="flex flex-col gap-[3rem] scroll-smooth">
+        <SectionSecondary :id="'item1'" :image-right="false" />
+        <SectionSecondary :id="'item2'" :image-right="true" />
+        <SectionSecondary :id="'item3'" :image-right="false" />
       </div>
     </div>
   </NuxtLayout>
