@@ -3,7 +3,19 @@ import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+      },
+    ],
+  ],
+  imports: {
+    dirs: ['stores'],
+  },
   vite: {
     plugins: [eslintPlugin()],
   },
