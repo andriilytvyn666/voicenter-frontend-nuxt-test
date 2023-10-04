@@ -1,6 +1,8 @@
 <template>
-  <div class="mx-[10.75rem] flex-col flex">
-    <h2 class="font-bold text-[20px] py-[1.5rem] mx-auto">section Title</h2>
+  <div id="slides-section" class="mx-[10.75rem] flex-col flex pt-[8.25rem]">
+    <h2 class="font-bold text-[20px] py-[1.5rem] mx-auto">
+      {{ data?.testTaskSlidesBlockTitle }}
+    </h2>
     <div class="flex items-center gap-[2.375rem]">
       <button id="prev-slide">
         <NuxtIcon name="feather/arrow-left" filled class="text-[24px]" />
@@ -50,6 +52,8 @@
 
 <script lang="ts" setup>
 const store = useFetchStore()
+
+const data = store.data?.data.siteData.testTaskTemplate_30_15673
 
 const slidesRaw =
   store.data?.data.siteData.testTaskTemplate_30_15673.testTaskSlidesBlockSlides
