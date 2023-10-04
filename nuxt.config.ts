@@ -4,8 +4,10 @@ import eslintPlugin from 'vite-plugin-eslint'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    'nuxt-icons',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    'nuxt-swiper',
     [
       '@pinia/nuxt',
       {

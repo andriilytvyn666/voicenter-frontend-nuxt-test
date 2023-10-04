@@ -10,6 +10,8 @@
         <SectionSecondary :id="'item3'" :image-right="false" />
       </div>
     </div>
+    <SectionSlides />
+    <Footer />
   </NuxtLayout>
 </template>
 

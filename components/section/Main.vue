@@ -10,7 +10,7 @@
         </p>
         <span v-html="data?.testTaskHeaderText"></span>
       </div>
-      <ButtonReadMore />
+      <Button />
     </div>
     <NuxtImg
       :src="data?.testTaskHeaderImage"

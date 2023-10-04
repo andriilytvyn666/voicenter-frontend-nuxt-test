@@ -22,7 +22,7 @@
           remaining essentially unchanged. It was popularised in the 1960s with
           the release of Letraset sheets
         </p>
-        <ButtonReadMore />
+        <Button />
       </div>
       <div class="bg-gray-500 w-full h-[24rem]" v-if="imageRight"></div>
     </div>

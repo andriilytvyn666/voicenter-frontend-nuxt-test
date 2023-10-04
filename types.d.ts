@@ -25,3 +25,16 @@ type ResponseBody = {
     }
   }
 }
+
+type Slide = {
+  key: string
+  name: string
+  ncContentTypeAlias: string
+  title: string
+  subtitle: string
+  buttonLink: string
+  buttonText: string
+  description: string
+  image: string
+  imageAlt: string
+}
