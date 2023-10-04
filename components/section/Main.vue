@@ -8,11 +8,7 @@
         <p class="font-medium text-[20px] line-clamp-2">
           {{ data?.testTaskHeaderSubtitle }}
         </p>
-        <p class="line-clamp-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an
-        </p>
+        <span v-html="data?.testTaskHeaderText"></span>
       </div>
       <button
         class="py-2 px-8 bg-[#FF0000] text-white whitespace-nowrap font-normal w-fit"
@@ -20,7 +16,11 @@
         Read More
       </button>
     </div>
-    <div class="bg-gray-500 w-full grow h-[20rem]"></div>
+    <NuxtImg
+      :src="data?.testTaskHeaderImage"
+      :alt="data?.testTaskHeaderImageAltText"
+      class="w-full grow h-[20rem]"
+    />
   </div>
 </template>
 
