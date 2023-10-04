@@ -1,10 +1,13 @@
 <template>
-  <div id="slides-section" class="mx-[10.75rem] flex-col flex pt-[8.25rem]">
+  <div
+    id="slides-section"
+    class="mx-8 lg:mx-[10.75rem] flex-col flex pt-[4rem] md:pt-[8.25rem]"
+  >
     <h2 class="font-bold text-[20px] py-[1.5rem] mx-auto">
       {{ data?.testTaskSlidesBlockTitle }}
     </h2>
     <div class="flex items-center gap-[2.375rem]">
-      <button id="prev-slide">
+      <button id="prev-slide" class="hidden lg:block">
         <NuxtIcon name="feather/arrow-left" filled class="text-[24px]" />
       </button>
 
@@ -39,7 +42,7 @@
           />
         </SwiperSlide>
       </Swiper>
-      <button id="next-slide">
+      <button id="next-slide" class="hidden lg:block">
         <NuxtIcon name="feather/arrow-right" filled class="text-[24px]" />
       </button>
     </div>

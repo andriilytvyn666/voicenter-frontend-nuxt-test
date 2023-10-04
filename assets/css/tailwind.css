@@ -8,6 +8,10 @@
     @apply scroll-smooth;
   }
 
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
   .nuxt-icon svg {
     margin-bottom: 0;
   }

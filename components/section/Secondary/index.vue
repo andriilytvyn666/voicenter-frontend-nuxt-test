@@ -1,6 +1,6 @@
 <template>
   <div id="second-section" class="flex">
-    <Sidebar />
+    <Sidebar class="" />
     <div class="flex flex-col gap-[2rem] items-center" id="nav2">
       <h2 class="font-bold text-[20px] py-[1.5rem]">
         {{ data?.testTaskSecondBlockTitle }}

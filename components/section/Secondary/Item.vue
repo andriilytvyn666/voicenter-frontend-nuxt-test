@@ -1,5 +1,8 @@
 <template>
-  <div :id="$props.id" class="items-center grid grid-cols-2 gap-[4.5rem] mx-8">
+  <div
+    :id="$props.id"
+    class="items-center grid md:grid-cols-2 gap-8 md:gap-[4.5rem] mx-8"
+  >
     <div
       class="max-h-[20rem] overflow-hidden items-center flex"
       v-if="!imageRight"
@@ -11,7 +14,10 @@
       <h3 class="font-medium line-clamp-2">
         {{ $props.subtitle }}
       </h3>
-      <span v-html="$props.text" class="line-clamp-6"></span>
+      <span
+        v-html="$props.text"
+        class="line-clamp-6 md:line-clamp-3 lg:line-clamp-6"
+      ></span>
       <Button :text="$props.buttonText" :link="$props.buttonLink" />
     </div>
     <div
