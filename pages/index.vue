@@ -9,6 +9,14 @@
 </template>
 
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'Voicenter Frontend Nuxt Test - Andrii Lyvyn',
+  description: 'Frontend assigment',
+  author: 'Andrii Lytvyn',
+  ogTitle: 'Voicenter Frontend Nuxt Test - Andrii Lyvyn',
+  ogDescription: 'Frontend assigment',
+})
+
 const store = useFetchStore()
 
 const { data } = await useFetch<ResponseBody>(
