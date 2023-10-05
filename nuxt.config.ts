@@ -2,7 +2,7 @@
 import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     'nuxt-icons',
     '@nuxtjs/tailwindcss',

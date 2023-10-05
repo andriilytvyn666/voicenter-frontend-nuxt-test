@@ -1,7 +1,7 @@
 <template>
   <div
     id="main-section"
-    class="flex flex-col-reverse md:flex-row gap-12 md:gap-32 items-center px-8 md:px-16 pt-11 pb-20 bg-[#EEEEEE]"
+    class="flex flex-col-reverse lg:flex-row gap-12 md:gap-24 items-center px-8 md:px-16 pt-11 pb-20 bg-[#EEEEEE]"
   >
     <div class="flex flex-col gap-[3.125rem]">
       <div class="flex flex-col gap-[0.875rem]">
@@ -18,11 +18,13 @@
       </div>
       <Button />
     </div>
-    <NuxtImg
-      :src="data?.testTaskHeaderImage"
-      :alt="data?.testTaskHeaderImageAltText"
-      class="w-full"
-    />
+    <div class="items-center max-h-[20rem] flex overflow-hidden w-full">
+      <NuxtImg
+        :src="data?.testTaskHeaderImage"
+        :alt="data?.testTaskHeaderImageAltText"
+        class="w-full"
+      />
+    </div>
   </div>
 </template>
 

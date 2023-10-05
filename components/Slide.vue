@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-[20px] flex flex-col-reverse lg:grid lg:grid-cols-2 gap-[2.25rem] items-center"
+    class="text-[20px] flex flex-col-reverse md:grid md:grid-cols-2 gap-[2.25rem] items-center"
   >
     <div class="flex flex-col gap-6">
       <h2 class="font-bold line-clamp-1">{{ $props.title }}</h2>
@@ -11,7 +11,9 @@
       ></span>
       <Button :text="$props.buttonText" :link="$props.buttonLink" />
     </div>
-    <NuxtImg class="w-full" :src="image" :alt="imageAlt" />
+    <div class="flex overflow-hidden max-h-[20rem] items-center">
+      <NuxtImg class="w-full" :src="image" :alt="imageAlt" />
+    </div>
   </div>
 </template>
 

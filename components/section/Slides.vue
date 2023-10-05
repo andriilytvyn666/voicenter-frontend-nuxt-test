@@ -7,7 +7,7 @@
       {{ data?.testTaskSlidesBlockTitle }}
     </h2>
     <div class="flex items-center gap-[2.375rem]">
-      <button id="prev-slide" class="hidden lg:block">
+      <button id="prev-slide" class="hidden md:block">
         <NuxtIcon name="feather/arrow-left" filled class="text-[24px]" />
       </button>
 
@@ -42,7 +42,7 @@
           />
         </SwiperSlide>
       </Swiper>
-      <button id="next-slide" class="hidden lg:block">
+      <button id="next-slide" class="hidden md:block">
         <NuxtIcon name="feather/arrow-right" filled class="text-[24px]" />
       </button>
     </div>

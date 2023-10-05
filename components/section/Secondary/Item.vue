@@ -4,7 +4,7 @@
     class="items-center grid md:grid-cols-2 gap-8 md:gap-[4.5rem] mx-8"
   >
     <div
-      class="max-h-[20rem] overflow-hidden items-center flex"
+      class="max-h-[10rem] overflow-hidden items-center flex"
       v-if="!imageRight"
     >
       <NuxtImg :src="$props.image" :alt="$props.imageAltAtr" class="w-full" />
@@ -21,7 +21,7 @@
       <Button :text="$props.buttonText" :link="$props.buttonLink" />
     </div>
     <div
-      class="max-h-[20rem] overflow-hidden items-center flex"
+      class="max-h-[16rem] overflow-hidden items-center flex"
       v-if="imageRight"
     >
       <NuxtImg :src="$props.image" :alt="$props.imageAltAtr" class="w-full" />
