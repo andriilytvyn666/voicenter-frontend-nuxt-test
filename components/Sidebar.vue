@@ -14,7 +14,7 @@
         :key="item.key"
       >
         <NuxtLink
-          class="nav-link whitespace-nowrap"
+          class="nav-link whitespace-nowrap overflow-hidden"
           :href="`#${item.title.toLowerCase().replace(' ', '')}`"
           ><h3>{{ item.title }}</h3></NuxtLink
         >
